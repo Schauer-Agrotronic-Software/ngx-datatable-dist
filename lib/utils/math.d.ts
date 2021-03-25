@@ -26,10 +26,4 @@ export declare function adjustColumnWidths(allColumns: any, expectedWidth: any):
  *  - If the grid starts off small but then becomes greater than the size ( + / - )
  *    the width should use the original width; not the newly proportioned widths.
  */
-export declare function forceFillColumnWidths(
-  allColumns: any[],
-  expectedWidth: number,
-  startIdx: number,
-  allowBleed: boolean,
-  defaultColWidth?: number
-): void;
+export declare function forceFillColumnWidths(allColumns: any[], expectedWidth: number, startIdx: number, allowBleed: boolean, defaultColWidth?: number): void;

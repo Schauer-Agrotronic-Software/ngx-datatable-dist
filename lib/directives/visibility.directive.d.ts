@@ -11,14 +11,14 @@ import { EventEmitter, ElementRef, NgZone, OnInit, OnDestroy } from '@angular/co
  *
  */
 export declare class VisibilityDirective implements OnInit, OnDestroy {
-  private element;
-  private zone;
-  isVisible: boolean;
-  visible: EventEmitter<any>;
-  timeout: any;
-  constructor(element: ElementRef, zone: NgZone);
-  ngOnInit(): void;
-  ngOnDestroy(): void;
-  onVisibilityChange(): void;
-  runCheck(): void;
+    private element;
+    private zone;
+    isVisible: boolean;
+    visible: EventEmitter<any>;
+    timeout: any;
+    constructor(element: ElementRef, zone: NgZone);
+    ngOnInit(): void;
+    ngOnDestroy(): void;
+    onVisibilityChange(): void;
+    runCheck(): void;
 }

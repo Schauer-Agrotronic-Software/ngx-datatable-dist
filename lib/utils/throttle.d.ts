@@ -10,15 +10,8 @@ export declare function throttle(func: any, wait: number, options?: any): (this:
  *    myFn() { ... }
  *  }
  */
-export declare function throttleable(
-  duration: number,
-  options?: any
-): (
-  target: any,
-  key: PropertyKey,
-  descriptor: PropertyDescriptor
-) => {
-  configurable: boolean;
-  enumerable: boolean;
-  get: () => any;
+export declare function throttleable(duration: number, options?: any): (target: any, key: PropertyKey, descriptor: PropertyDescriptor) => {
+    configurable: boolean;
+    enumerable: boolean;
+    get: () => any;
 };

@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
  * input bindings of DataTableColumnDirective
  */
 export declare class ColumnChangesService {
-  private columnInputChanges;
-  get columnInputChanges$(): Observable<undefined>;
-  onInputChange(): void;
+    private columnInputChanges;
+    get columnInputChanges$(): Observable<undefined>;
+    onInputChange(): void;
 }

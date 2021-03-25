@@ -9,27 +9,24 @@ import { Subscription } from 'rxjs';
  *
  */
 export declare class DraggableDirective implements OnDestroy, OnChanges {
-  dragEventTarget: any;
-  dragModel: any;
-  dragX: boolean;
-  dragY: boolean;
-  dragStart: EventEmitter<any>;
-  dragging: EventEmitter<any>;
-  dragEnd: EventEmitter<any>;
-  element: HTMLElement;
-  isDragging: boolean;
-  subscription: Subscription;
-  constructor(element: ElementRef);
-  ngOnChanges(changes: SimpleChanges): void;
-  ngOnDestroy(): void;
-  onMouseup(event: MouseEvent): void;
-  onMousedown(event: MouseEvent): void;
-  move(
-    event: MouseEvent,
-    mouseDownPos: {
-      x: number;
-      y: number;
-    }
-  ): void;
-  private _destroySubscription;
+    dragEventTarget: any;
+    dragModel: any;
+    dragX: boolean;
+    dragY: boolean;
+    dragStart: EventEmitter<any>;
+    dragging: EventEmitter<any>;
+    dragEnd: EventEmitter<any>;
+    element: HTMLElement;
+    isDragging: boolean;
+    subscription: Subscription;
+    constructor(element: ElementRef);
+    ngOnChanges(changes: SimpleChanges): void;
+    ngOnDestroy(): void;
+    onMouseup(event: MouseEvent): void;
+    onMousedown(event: MouseEvent): void;
+    move(event: MouseEvent, mouseDownPos: {
+        x: number;
+        y: number;
+    }): void;
+    private _destroySubscription;
 }

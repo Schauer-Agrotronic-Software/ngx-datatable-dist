@@ -1,1 +1,2 @@
-export declare class ProgressBarComponent {}
+export declare class ProgressBarComponent {
+}
