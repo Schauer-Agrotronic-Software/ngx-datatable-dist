@@ -3060,6 +3060,7 @@ class DatatableComponent {
             // If a column has been specified in _groupRowsBy created a new array with the data grouped by that row
             this.groupedRows = this.groupArrayBy(this._rows, this._groupRowsBy);
         }
+        console.log('table new value: ' + val);
         this.cd.markForCheck();
     }
     /**
@@ -3432,6 +3433,7 @@ class DatatableComponent {
         this.cd.detectChanges();
     }
     triggerChangeDetection() {
+        console.log('table trigger change detection');
         this.cd.detectChanges();
     }
     /**
