@@ -3570,8 +3570,7 @@
                     // If a column has been specified in _groupRowsBy created a new array with the data grouped by that row
                     this.groupedRows = this.groupArrayBy(this._rows, this._groupRowsBy);
                 }
-                console.log('table new value: ' + val);
-                this.cd.markForCheck();
+                this.cd.detectChanges();
             },
             enumerable: false,
             configurable: true
